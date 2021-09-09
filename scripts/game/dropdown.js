@@ -1,21 +1,23 @@
-export const getDropdown = (team1, team2, team3) => {
+export const getDropdown1 = () => {
     return `
-    <select name="selectTeam1" id="selectTeam1">
-        <option value="team${team1.id}">${team1.name}</option>
-        <option value="team${team2.id}">${team2.name}</option>
-        <option value="team${team3.id}">${team3.name}</option>
+    <select name="selectTeam1" id="team1Drop">
+                
     </select>
+    `
+}
 
-    <select name="selectTeam2" id="selectTeam2">
-        <option value="team${team1.id}">${team1.name}</option>
-        <option value="team${team2.id}">${team2.name}</option>
-        <option value="team${team3.id}">${team3.name}</option>
+export const getDropdown2 = () => {
+    return `
+    <select name="selectTeam2" id="team2Drop">
+                
     </select>
+    `
+}
 
-    <select name="selectTeam3" id="selectTeam3">
-        <option value="team${team1.id}">${team1.name}</option>
-        <option value="team${team2.id}">${team2.name}</option>
-        <option value="team${team3.id}">${team3.name}</option>
+export const getDropdown3 = () => {
+    return `
+    <select name="selectTeam3" id="team3Drop">
+                
     </select>
     `
 }
