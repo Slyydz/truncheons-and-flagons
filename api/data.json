@@ -22,8 +22,20 @@
     "team": [
         {
             "id": 1,
-            "name": "team1",
-            "time": "",
+            "name": "Green Wyverns",
+            "time": 1631205354262,
+            "logo": "[URL]"
+        },
+        {
+            "id": 2,
+            "name": "French Flagons",
+            "time": 1631205354262,
+            "logo": "[URL]"
+        },
+        {
+            "id": 3,
+            "name": "Black Knights",
+            "time": 1631205354262,
             "logo": "[URL]"
         }
     ],
