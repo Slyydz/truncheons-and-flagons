@@ -1,5 +1,6 @@
 import { getTeam } from "./DataManager.js";
 import { TeamList } from "./team/Team.js";
+import { addTeam } from "./DataManager.js";
 
  const contentElement = document.querySelector(".displayPart-1");
  const eventElement = document.querySelector(".container");
@@ -19,3 +20,21 @@ const onStartClicked = () => {
 
     
 }
+
+
+eventElement.addEventListener('click', e =>
+
+{
+    e.preventDefault()
+    if(e.target.id === 'record-Team')
+    {
+        const addTeams = document.querySelector('.addTeams').value
+
+        const entries = 
+        {
+            name:addTeams
+        }
+addTeam(entries)
+.then(response => getTeam())
+    }
+})
