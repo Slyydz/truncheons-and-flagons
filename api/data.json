@@ -1,0 +1,38 @@
+{
+    "game": [
+        {
+            "time": "",
+            "gameId": 123456,
+            "Scores": {
+                "team1": 1234,
+                "team2": 5678,
+                "team3": 9012
+            }
+        }
+    ],
+    "scores": [
+        {
+            "teamPoints": {
+                "team1": 1234,
+                "team2": 5678,
+                "team3": 9012
+            }
+        }
+    ],
+    "team": [
+        {
+            "id": 1,
+            "name": "team1",
+            "time": "",
+            "logo": "[URL]"
+        }
+    ],
+    "players": [
+        {
+            "first": "",
+            "last": "",
+            "country": "",
+            "teamId": 1
+        }
+    ]
+}
