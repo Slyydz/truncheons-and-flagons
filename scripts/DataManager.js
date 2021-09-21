@@ -25,12 +25,14 @@ export const createDropDown1 = () => {
                 // Examine the text in the response  
                 response.json().then(function (data) {
                     let option;
-
-                    for (let i = 0; i < data.length; i++) {
-                        option = document.createElement('option');
-                        option.text = data[i].name;
-                        dropdown.add(option);
-                    }
+                    
+                        for (let i = 0; i < data.length; i++) {
+                            if(data[i].players.length >= 3){
+                                option = document.createElement('option');
+                                option.text = data[i].name;
+                                dropdown.add(option);
+                            }
+                        }
                 });
             }
         )
@@ -55,11 +57,12 @@ export const createDropDown2 = () => {
                 // Examine the text in the response  
                 response.json().then(function (data) {
                     let option;
-
                     for (let i = 0; i < data.length; i++) {
-                        option = document.createElement('option');
-                        option.text = data[i].name;
-                        dropdown.add(option);
+                        if(data[i].players.length >= 3){
+                            option = document.createElement('option');
+                            option.text = data[i].name;
+                            dropdown.add(option);
+                        }
                     }
                 });
             }
@@ -85,11 +88,12 @@ export const createDropDown3 = () => {
                 // Examine the text in the response  
                 response.json().then(function (data) {
                     let option;
-
                     for (let i = 0; i < data.length; i++) {
-                        option = document.createElement('option');
-                        option.text = data[i].name;
-                        dropdown.add(option);
+                        if(data[i].players.length >= 3){
+                            option = document.createElement('option');
+                            option.text = data[i].name;
+                            dropdown.add(option);
+                        }
                     }
                 });
             }
