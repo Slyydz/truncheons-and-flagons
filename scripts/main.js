@@ -41,7 +41,7 @@ eventElement.addEventListener("change", event => {
             break;
         case "team3Drop":
             const teamName3 = event.target.value;
-            console.log("Team 3", teamName3);
+            console.log("Team 3:", teamName3);
             break;
     }
 })

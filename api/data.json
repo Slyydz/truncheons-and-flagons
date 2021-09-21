@@ -26,7 +26,19 @@
       "score": 0,
       "time": 1631205354262,
       "logo": "[URL]",
-      "players": []
+      "players": [ 
+      {
+        "firstName": "test",
+        "lastName": "dummy"
+      },
+      {
+        "firstName": "test",
+        "lastName": "dummy"
+      },
+      {
+        "firstName": "test",
+        "lastName": "dummy"
+      }]
     },
     {
       "id": 2,
@@ -36,16 +48,16 @@
       "logo": "[URL]",
       "players": [
         {
-          "firstName": "Brady",
-          "lastName": "Williams"
+          "firstName": "test",
+          "lastName": "dummy"
         },
         {
-          "firstName": "Slyydz",
-          "lastName": "yaya"
+          "firstName": "test",
+          "lastName": "dummy"
         },
         {
-          "firstName": "Peter",
-          "lastName": "Parker"
+          "firstName": "test",
+          "lastName": "dummy"
         }
       ]
     },
@@ -61,7 +73,20 @@
       "name": "Grey Geese",
       "score": 0,
       "date": 1632237047411,
-      "players": [],
+      "players": [
+        {
+          "firstName": "test",
+          "lastName": "dummy"
+        },
+        {
+          "firstName": "test",
+          "lastName": "dummy"
+        },
+        {
+          "firstName": "test",
+          "lastName": "dummy"
+        }
+      ],
       "id": 4
     }
   ]
