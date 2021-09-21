@@ -1,0 +1,23 @@
+.leaderboard {
+    list-style-type: none;
+}
+
+.createTab {
+    display: flex;
+    flex-direction: column;
+}
+.teamsTab {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.playersTab {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#dropPlayers {
+    width: 200px;
+}

@@ -96,6 +96,37 @@ export const createDropDown3 = () => {
         )
 }
 
+export const createDropDownPlayers = () => {
+
+    let dropdown = document.getElementById('dropPlayers');
+    dropdown.length = 0;
+
+    let defaultOption = document.createElement('option');
+    defaultOption.text = 'Choose A Team';
+
+    dropdown.add(defaultOption);
+    dropdown.selectedIndex = 0;
+
+    const url = 'http://localhost:8088/team';
+
+    fetch(url)
+        .then(
+            function (response) {
+                // Examine the text in the response  
+                response.json().then(function (data) {
+                    let option;
+
+                    for (let i = 0; i < data.length; i++) {
+                        option = document.createElement('option');
+                        option.text = data[i].name;
+                        option.value = data[i].id;
+                        dropdown.add(option);
+                    }
+                });
+            }
+        )
+}
+
 
 export const addTeam = (teamData) => {
     return fetch('http://localhost:8088/team',
@@ -112,23 +143,18 @@ export const addTeam = (teamData) => {
         .then(response => response.json())
 }
 
+ export const addPlayer = (input, id) => {
+     return fetch(`http://localhost:8088/team/${id}`,
+         {
+             method: "PUT",
+             headers:
+             {
+                 "content-type": "application/json"
+             },
 
+             body: JSON.stringify(input)
 
+         })
+         .then(response => response.json())
+ }
 
-
-// export const addTeam = (playerData) =>
-
-// {
-//     return fetch('http://localhost:8088/players', 
-//     {
-//         method: "POST",
-//         headers:
-//         {
-//             "content-type": "application/json"
-//         },
-
-//         body: JSON.stringify(playerData)
-
-//     })
-//     .then(response => response.json())
-// }
