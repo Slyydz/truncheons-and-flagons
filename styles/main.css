@@ -21,3 +21,33 @@
 #dropPlayers {
     width: 200px;
 }
+
+#startBtn{
+    width: 200px;
+}
+
+#RoundOneConfirm {
+    margin-top: 30px;
+    width: 100px;
+}
+
+#team1Drop {
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+#team2Drop {
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+#team3Drop {
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+.displayPart-1{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}

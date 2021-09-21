@@ -2,11 +2,15 @@ import { addPlayer, createDropDownPlayers, getTeam } from "./DataManager.js";
 import { addTeam } from "./DataManager.js";
 import { createDropDown1, createDropDown2, createDropDown3 } from "./DataManager.js";
 import { getDropdown1, getDropdown2, getDropdown3, getDropdownPlayers } from "./game/dropdown.js";
+import { TeamRound } from "./team/Team.js";
 import { teamList } from "./team/TeamList.js";
 
 const contentElement = document.querySelector(".displayPart-1");
+const roundButton = document.getElementById("startRound");
 const eventElement = document.querySelector(".container");
+const introElement = document.querySelector(".createTab");
 const playerDropd = document.querySelector(".dropdownPlayers");
+roundButton.style.display = "none";
 
 eventElement.addEventListener("click", event => {
     if (event.target.id === "startBtn") {
@@ -23,24 +27,28 @@ const onStartClicked = () => {
     createDropDown1();
     createDropDown2();
     createDropDown3();
+    roundButton.style.display = "block";
+    introElement.innerHTML = "";
 
 
 }
 
-
+let teamName1;
+let teamName2;
+let teamName3;
 //for drop down menu
 eventElement.addEventListener("change", event => {
     switch (event.target.id) {
         case "team1Drop":
-            const teamName1 = event.target.value;
+            teamName1 = event.target.value;
             console.log("Team 1:", teamName1);
             break;
         case "team2Drop":
-            const teamName2 = event.target.value;
+            teamName2 = event.target.value;
             console.log("Team 2:", teamName2);
             break;
         case "team3Drop":
-            const teamName3 = event.target.value;
+            teamName3 = event.target.value;
             console.log("Team 3:", teamName3);
             break;
     }
@@ -106,6 +114,13 @@ eventElement.addEventListener("click", event => {
             console.log(player, team);
 
         }
+    }
+})
+
+eventElement.addEventListener("click", event => {
+    if(event.target.id == "startRound"){
+        contentElement.innerHTML = TeamRound(teamName1, teamName2, teamName3);
+        roundButton.style.display = "none";
     }
 })
 
