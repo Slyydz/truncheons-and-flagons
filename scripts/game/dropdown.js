@@ -21,3 +21,11 @@ export const getDropdown3 = () => {
     </select>
     `
 }
+
+export const getDropdownPlayers = (input) => {
+    return `
+    <select name="selectPlayers" id="dropPlayers">
+                
+    </select>
+    `
+}

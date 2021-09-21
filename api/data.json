@@ -23,64 +23,46 @@
     {
       "id": 1,
       "name": "Green Wyverns",
+      "score": 0,
       "time": 1631205354262,
-      "logo": "[URL]"
+      "logo": "[URL]",
+      "players": []
     },
     {
       "id": 2,
       "name": "French Flagons",
+      "score": 0,
       "time": 1631205354262,
-      "logo": "[URL]"
+      "logo": "[URL]",
+      "players": [
+        {
+          "firstName": "Brady",
+          "lastName": "Williams"
+        },
+        {
+          "firstName": "Slyydz",
+          "lastName": "yaya"
+        },
+        {
+          "firstName": "Peter",
+          "lastName": "Parker"
+        }
+      ]
     },
     {
       "id": 3,
       "name": "Black Knights",
+      "score": 0,
       "time": 1631205354262,
-      "logo": "[URL]"
+      "logo": "[URL]",
+      "players": []
     },
     {
-      "name": "Gerson Team",
+      "name": "Grey Geese",
+      "score": 0,
+      "date": 1632237047411,
+      "players": [],
       "id": 4
-    },
-    {
-      "name": "Gerson Team",
-      "id": 5
-    },
-    {
-      "name": "Gerson Team",
-      "id": 6
-    },
-    {
-      "name": "Gerson ",
-      "id": 7
-    },
-    {
-      "name": "Hello",
-      "id": 8
-    },
-    {
-      "name": "Testing",
-      "id": 9
-    },
-    {
-      "name": "Testing",
-      "id": 10
-    },
-    {
-      "name": "Team Brady",
-      "id": 11
-    },
-    {
-      "name": "Test again",
-      "id": 12
-    }
-  ],
-  "players": [
-    {
-      "first": "",
-      "last": "",
-      "country": "",
-      "teamId": 1
     }
   ]
 }

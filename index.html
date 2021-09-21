@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,17 +18,26 @@
      <main class="container">
 
         <!-- this section will allow the user to enter scores -->
+        <div class="createTab">
+            <h3>Create a team:</h3>
+            <div class="teamsTab">
+                <input name="addTeams" type="text" placeholder="Team Name">
+                <button id="record-Team">Create Team</button>
+            </div>
+
+            <div class="playersTab">
+                <h3>Add a player:</h3>
+                <input name="firstName" type="text" placeholder="First Name">
+                <input name="lastName" type="text" placeholder="Last Name">
+                <section class="dropdownPlayers">
+
+                </section>
+                <button id="record-Player">Create Player</button>
+            </div>
+        </div>
 
         <section class="round-Score">
-
-        <input class="addTeams" type="text" placeholder="Team Name">
-        <button id="record-Team">Create Team</button>
-
-        <input type="text">
         
-        <input type="text">
-        
-        <button id="round-button">Save Round Score</button>
 
         </section>
 
@@ -49,6 +59,9 @@
 
 
             </section>
+            <ul class="leaderboard">
+
+            </ul>
 
         <!-- When the user clicks the game will start -->
     </main>
