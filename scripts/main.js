@@ -117,6 +117,26 @@ eventElement.addEventListener("click", event => {
     }
 })
 
+//add points to a team
+eventElement.addEventListener("click", event => {
+    if(event.target.id.startsWith("confirm")){
+
+        const getTeam1Score = document.querySelector(`input[name='team1Score--${teamName1}`).value;
+        const getTeam2Score = document.querySelector(`input[name='team2Score--${teamName2}`).value;
+        const getTeam3Score = document.querySelector(`input[name='team3Score--${teamName3}`).value;
+
+        if(getTeam1Score == "" || getTeam2Score == "" || getTeam3Score == ""){
+            console.log("please enter in scores");
+        }else{
+            if((+getTeam1Score + +getTeam2Score + +getTeam3Score) > 3){
+                console.log((+getTeam1Score + +getTeam2Score + +getTeam3Score), "fail");
+            }else{
+                console.log("pass");
+            }
+        }
+    }
+})
+
 eventElement.addEventListener("click", event => {
     if(event.target.id == "startRound"){
         contentElement.innerHTML = TeamRound(teamName1, teamName2, teamName3);
